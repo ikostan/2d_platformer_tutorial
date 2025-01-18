@@ -1,4 +1,4 @@
-# 2d_platformer_tutorial
+# 2D Platformer Tutorial
 
 ## The basics of godot while creating a 2d platformer
 
