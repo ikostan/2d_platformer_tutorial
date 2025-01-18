@@ -16,3 +16,11 @@ collision_layer = 256
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticPlatform"]
 position = Vector2(476, 345)
 shape = SubResource("RectangleShape2D_q32rb")
+
+[node name="StaticPlatform2" type="StaticBody2D" parent="."]
+position = Vector2(445, 230)
+collision_layer = 256
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticPlatform2"]
+position = Vector2(476, 345)
+shape = SubResource("RectangleShape2D_q32rb")
