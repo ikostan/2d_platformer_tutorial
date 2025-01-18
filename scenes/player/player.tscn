@@ -1,9 +1,14 @@
-[gd_scene format=3 uid="uid://dxisyd7ehgsio"]
+[gd_scene load_steps=2 format=3 uid="uid://dxisyd7ehgsio"]
+
+[ext_resource type="Texture2D" uid="uid://1c72mrxrtjt" path="res://assets/characters/main/male-spritesheet.png" id="1_2hh8b"]
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+texture = ExtResource("1_2hh8b")
+hframes = 8
+vframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
