@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxisyd7ehgsio"]
+[gd_scene load_steps=3 format=3 uid="uid://dxisyd7ehgsio"]
 
 [ext_resource type="Texture2D" uid="uid://1c72mrxrtjt" path="res://assets/characters/main/male-spritesheet.png" id="1_2hh8b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xotdx"]
 
 [node name="Player" type="CharacterBody2D"]
 
@@ -12,5 +14,7 @@ vframes = 6
 frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_xotdx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
