@@ -20,16 +20,22 @@ func _physics_process(delta: float) -> void:
 
 func handle_movement(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * speed
 		sprite_2d.flip_h = direction < 0  # flip animation direction left/right
 	else:
-		# No direction
-		# Stop player slowly
+		# No direction, stop player slowly
 		velocity.x = move_toward(velocity.x, 0, speed)
 	
 func update_animation() -> void:
-	pass
+	if not is_on_floor() and velocity.y < 0:
+		animation_player.play("jump")
+	elif not is_on_floor():
+		animation_player.play("fall")
+	elif is_on_floor() and velocity.x != 0:
+		animation_player.play("run")
+	elif is_on_floor():
+		animation_player.play("idle")
+		
 	
