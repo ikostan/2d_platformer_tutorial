@@ -194,6 +194,8 @@ texture = ExtResource("1_0klnj")
 16:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_vopxd"]
+physics_layer_0/collision_layer = 256
+physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_gy8pg")
 
 [node name="GroundTileMapLayer" type="TileMapLayer"]
