@@ -33,7 +33,7 @@ func update_animation() -> void:
 		animation_player.play("jump")
 	elif not is_on_floor():
 		animation_player.play("fall")
-	elif is_on_floor() and velocity.x != 0:
+	elif is_on_floor() and velocity.x:
 		animation_player.play("run")
 	elif is_on_floor():
 		animation_player.play("idle")
