@@ -101,3 +101,5 @@ libraries = {
 "": SubResource("AnimationLibrary_lnhcy")
 }
 autoplay = "idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
