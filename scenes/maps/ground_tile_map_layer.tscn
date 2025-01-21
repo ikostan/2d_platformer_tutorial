@@ -1,9 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://lewjwhdilnkt"]
+[gd_scene load_steps=4 format=3 uid="uid://c05ex24vkd281"]
 
-[ext_resource type="Texture2D" uid="uid://dmbpkonykrin7" path="res://assets/environment/v1-v2/tileset.png" id="1_osurc"]
+[ext_resource type="Texture2D" uid="uid://dmbpkonykrin7" path="res://assets/environment/v1-v2/tileset.png" id="1_0klnj"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cp3bl"]
-texture = ExtResource("1_osurc")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gy8pg"]
+texture = ExtResource("1_0klnj")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -193,8 +193,8 @@ texture = ExtResource("1_osurc")
 15:7/0 = 0
 16:7/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_egjid"]
-sources/1 = SubResource("TileSetAtlasSource_cp3bl")
+[sub_resource type="TileSet" id="TileSet_vopxd"]
+sources/0 = SubResource("TileSetAtlasSource_gy8pg")
 
-[node name="TileMapLayer" type="TileMapLayer"]
-tile_set = SubResource("TileSet_egjid")
+[node name="GroundTileMapLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_vopxd")
