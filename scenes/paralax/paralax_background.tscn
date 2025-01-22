@@ -20,12 +20,11 @@ centered = false
 
 [node name="Midground" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.3, 0.3)
-scroll_offset = Vector2(-44, -28)
+scroll_offset = Vector2(-44, -70)
 repeat_size = Vector2(144, 0)
 repeat_times = 7
 
 [node name="Sprite2D" type="Sprite2D" parent="Midground"]
-visible = false
 position = Vector2(-76, 118)
 texture = ExtResource("2_esdiv")
 centered = false
