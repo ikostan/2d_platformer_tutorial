@@ -1,10 +1,17 @@
-[gd_scene format=3 uid="uid://wkcjf2sasv6w"]
+[gd_scene load_steps=2 format=3 uid="uid://bfqe57n8fdtqj"]
+
+[ext_resource type="Texture2D" uid="uid://dbd45bs5cy6px" path="res://assets/backgrounds/v1/skyline-a.png" id="1_a0uen"]
 
 [node name="ParalaxBackground" type="Node2D"]
+position = Vector2(88, 1)
 
 [node name="Background" type="Parallax2D" parent="."]
+scroll_offset = Vector2(77, 0)
+repeat_size = Vector2(128, 0)
+repeat_times = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
+texture = ExtResource("1_a0uen")
 centered = false
 
 [node name="Midground" type="Parallax2D" parent="."]
