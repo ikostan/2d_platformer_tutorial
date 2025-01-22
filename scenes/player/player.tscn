@@ -103,4 +103,4 @@ libraries = {
 autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -45)
+position = Vector2(-2, -39)

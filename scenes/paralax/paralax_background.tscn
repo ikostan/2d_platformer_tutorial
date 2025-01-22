@@ -10,7 +10,7 @@ position = Vector2(88, 1)
 
 [node name="Background" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.1, 0.1)
-scroll_offset = Vector2(-43, -90)
+scroll_offset = Vector2(-43, -80)
 repeat_size = Vector2(128, 0)
 repeat_times = 8
 
@@ -20,7 +20,7 @@ centered = false
 
 [node name="Midground" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.3, 0.3)
-scroll_offset = Vector2(-44, -70)
+scroll_offset = Vector2(-44, -65)
 repeat_size = Vector2(144, 0)
 repeat_times = 7
 
