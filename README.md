@@ -2,8 +2,7 @@
 
 ## The basics of godot while creating a 2d platformer
 
-Welcome to the first video in a series where we are going to learn the basics 
-of godot while creating a 2d platformer. 
+Welcome to the series of YouTube tutorials where we are going to learn the basics of GODOT.
 
 ## Chapters
 
