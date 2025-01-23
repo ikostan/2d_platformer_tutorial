@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ocf8wq7hrc5" path="res://scenes/maps/ground_tile_map_layer.tscn" id="1_5bf8b"]
 [ext_resource type="PackedScene" uid="uid://dxisyd7ehgsio" path="res://scenes/player/player.tscn" id="1_h8pf5"]
-[ext_resource type="Script" path="res://scripts/levels/test_scene_script.gd" id="1_kc0cw"]
+[ext_resource type="Script" path="res://scripts/levels/scene_script.gd" id="1_kc0cw"]
 [ext_resource type="PackedScene" uid="uid://bfqe57n8fdtqj" path="res://scenes/paralax/paralax_background.tscn" id="2_78r6u"]
 
 [node name="TestScene" type="Node2D"]

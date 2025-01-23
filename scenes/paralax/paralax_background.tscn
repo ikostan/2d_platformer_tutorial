@@ -24,7 +24,7 @@ repeat_size = Vector2(144, 0)
 repeat_times = 7
 
 [node name="Sprite2D" type="Sprite2D" parent="Midground"]
-position = Vector2(-76, 118)
+position = Vector2(-80, 125)
 texture = ExtResource("2_esdiv")
 centered = false
 
@@ -35,6 +35,6 @@ repeat_size = Vector2(493, 0)
 repeat_times = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Foreground"]
-position = Vector2(-88, 31)
+position = Vector2(-110, 55)
 texture = ExtResource("3_8jkpp")
 centered = false
