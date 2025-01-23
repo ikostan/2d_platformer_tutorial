@@ -7,7 +7,7 @@ class_name Player extends CharacterBody2D
 @export var air_speed: float = 150.0
 @export var air_acceleration: float = 0.1
 @export var air_deceleration: float = 0.5
-@export var jump_force: float = -300.0
+@export var jump_force: float = -400.0
 @export var gravity: float = 980.0
 
 var direction: float

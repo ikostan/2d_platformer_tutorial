@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfqe57n8fdtqj"]
+[gd_scene load_steps=4 format=3 uid="uid://bfqe57n8fdtqj"]
 
 [ext_resource type="Texture2D" uid="uid://dbd45bs5cy6px" path="res://assets/backgrounds/v1/skyline-a.png" id="1_a0uen"]
 [ext_resource type="Texture2D" uid="uid://c4mewdt3c7san" path="res://assets/backgrounds/v1/buildings-bg.png" id="2_esdiv"]
 [ext_resource type="Texture2D" uid="uid://1sm863p72eg" path="res://assets/backgrounds/v1/near-buildings-bg.png" id="3_8jkpp"]
-[ext_resource type="Texture2D" uid="uid://cn1p7k6fxbajn" path="res://assets/backgrounds/caves/middleground-no-fungus.png" id="4_pow0y"]
 
 [node name="ParalaxBackground" type="Node2D"]
 position = Vector2(88, 1)
@@ -38,15 +37,4 @@ repeat_times = 2
 [node name="Sprite2D" type="Sprite2D" parent="Foreground"]
 position = Vector2(-88, 31)
 texture = ExtResource("3_8jkpp")
-centered = false
-
-[node name="Bottom" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.2, 0.2)
-scroll_offset = Vector2(-80, -85)
-repeat_size = Vector2(272, 0)
-repeat_times = 4
-
-[node name="Sprite2D" type="Sprite2D" parent="Bottom"]
-position = Vector2(-91, 278)
-texture = ExtResource("4_pow0y")
 centered = false
