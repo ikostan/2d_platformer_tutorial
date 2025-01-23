@@ -11,25 +11,38 @@ class_name Player extends CharacterBody2D
 
 var direction: float
 
+func _process(delta: float) -> void:
+	# Get the input direction and handle the movement/deceleration.
+	direction = Input.get_axis("left", "right")
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	handle_movement(delta)
+		handle_air_movement(delta)
+	else:
+		handle_ground_movement(delta)
+		
 	update_animation()
 	move_and_slide()
-	
 
-func handle_movement(delta: float) -> void:
-	# Get the input direction and handle the movement/deceleration.
-	direction = Input.get_axis("left", "right")
+
+func handle_air_movement(delta) -> void:
 	if direction:
-		velocity.x = direction * speed
-		sprite_2d.flip_h = direction < 0  # flip animation direction left/right
+		# flip animation direction left/right
+		sprite_2d.flip_h = direction < 0
+
+
+func handle_ground_movement(delta: float) -> void:
+	if direction:
+		velocity.x = (direction * speed) + delta
+		# flip animation direction left/right
+		sprite_2d.flip_h = direction < 0
 	else:
 		# No direction, stop player slowly
 		velocity.x = move_toward(velocity.x, 0, speed)
+	
 	
 func update_animation() -> void:
 	if not is_on_floor() and velocity.y < 0:
@@ -41,4 +54,3 @@ func update_animation() -> void:
 	elif is_on_floor():
 		animation_player.play("idle")
 		
-	
