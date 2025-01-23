@@ -1,7 +1,5 @@
-![GODOT](https://github.com/ikostan/2d_platformer_tutorial/blob/main/icon.svg)
-
 # 2D Platformer Tutorial
-
+![GODOT](https://github.com/ikostan/2d_platformer_tutorial/blob/main/icon.svg)
 ## The basics of godot while creating a 2d platformer
 
 Welcome to YouTube tutorials where we are going to learn the basics of GODOT.
