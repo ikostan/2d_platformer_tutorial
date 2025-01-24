@@ -33,6 +33,10 @@ In this third part of our 2d platformer series, we'll implement basic jumping me
 some visual improvements to our level. we'll add air movement controls, configure proper jump 
 physics, and improve our level's appearance with a custom background color. 
 
+### [Camera limits & boundary](https://www.youtube.com/watch?v=thJkCRru5II&list=PLS_-svNHQV8gn-3NtT7kWB6jKIlaJ2nBd&index=5)
+
+in part 4 of our platformer series, we'll improve our game's camera system and add world boundaries
+to prevent the player from going where they shouldn't. 
 
 #### Sources: 
 	
