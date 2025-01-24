@@ -43,3 +43,4 @@ to prevent the player from going where they shouldn't.
 - [2d platformer tutorial](https://www.youtube.com/watch?v=5XBSjsHTY8g&list=PLS_-svNHQV8gn-3NtT7kWB6jKIlaJ2nBd)
 - [GitHub repo](https://github.com/kahanscious/youtube-2d-platformer-series/tree/main)
 - [Artwork](https://ansimuz.itch.io/gothicvania-patreon-collection)
+- [Godot Docs](https://docs.godotengine.org/en/stable/)
