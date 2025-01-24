@@ -13,9 +13,3 @@ jobs:
   yamllint:
     name: YAML Lint
     uses: ikostan/2d_platformer_tutorial/.github/workflows/yamllint.yml@main
-  codeql:
-    name: CodeQL for a new build
-    needs:
-      - markdown
-      - yamllint
-    uses: ikostan/2d_platformer_tutorial/.github/workflows/codeql.yml@main
