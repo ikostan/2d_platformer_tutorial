@@ -49,7 +49,7 @@ func handle_jump_movement() -> void:
 
 func handle_ground_movement() -> void:
 	if direction:
-		velocity.x = (direction * speed)
+		velocity.x = direction * speed
 	else:
 		# No direction, stop player slowly
 		velocity.x = move_toward(velocity.x, 0, speed)
