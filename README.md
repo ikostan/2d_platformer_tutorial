@@ -1,6 +1,7 @@
 # 2D Platformer Tutorial
 
 [![Main Build Pipeline](https://github.com/ikostan/2d_platformer_tutorial/actions/workflows/lint_test_build_pipeline.yml/badge.svg?branch=main)](https://github.com/ikostan/2d_platformer_tutorial/actions/workflows/lint_test_build_pipeline.yml)
+
 ![GODOT](https://github.com/ikostan/2d_platformer_tutorial/blob/main/icon.svg)
 
 ## The basics of godot while creating a 2d platformer
