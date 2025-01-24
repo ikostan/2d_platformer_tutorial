@@ -4,18 +4,18 @@ name: Main Build Pipeline
 on:   # yamllint disable-line rule:truthy
   push:
     branches:
-      - master
+      - main
 
 jobs:
   markdown:
     name: Markdown Lint
-    uses: ikostan/2d_platformer_tutorial/.github/workflows/markdown_lint.yml@master
+    uses: ikostan/2d_platformer_tutorial/.github/workflows/markdown_lint.yml@main
   yamllint:
     name: YAML Lint
-    uses: ikostan/2d_platformer_tutorial/.github/workflows/yamllint.yml@master
+    uses: ikostan/2d_platformer_tutorial/.github/workflows/yamllint.yml@main
   codeql:
     name: CodeQL for a new build
     needs:
       - markdown
       - yamllint
-    uses: ikostan/2d_platformer_tutorial/.github/workflows/codeql.yml@master
+    uses: ikostan/2d_platformer_tutorial/.github/workflows/codeql.yml@main
