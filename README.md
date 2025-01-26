@@ -1,4 +1,4 @@
-# 2D Platformer Tutorial
+# [2D Platformer Tutorial](https://www.youtube.com/watch?v=5XBSjsHTY8g&list=PLS_-svNHQV8gn-3NtT7kWB6jKIlaJ2nBd)
 
 [![Main Build Pipeline](https://github.com/ikostan/2d_platformer_tutorial/actions/workflows/lint_test_build_pipeline.yml/badge.svg?branch=main)](https://github.com/ikostan/2d_platformer_tutorial/actions/workflows/lint_test_build_pipeline.yml)
 
