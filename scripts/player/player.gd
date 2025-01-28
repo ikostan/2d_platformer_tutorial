@@ -24,6 +24,8 @@ func _process(delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
+		# Current velocity vector in pixels per second, used and modified
+		# during calls to move_and_slide().
 		velocity.y += gravity * delta
 		handle_air_movement()
 	else:
@@ -64,4 +66,4 @@ func update_animation() -> void:
 		animation_player.play("run")
 	elif is_on_floor():
 		animation_player.play("idle")
-		
+	print("position: ", position.x)	
