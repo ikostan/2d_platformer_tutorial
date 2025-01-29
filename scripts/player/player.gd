@@ -36,12 +36,18 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
+func _print_log() -> void:
+	print("position x: ", position.x, " y: ", position.y)
+
+
 func handle_air_movement() -> void:
 	# lerp: Vector interpolation
 	if direction:
 		velocity.x = lerp(velocity.x, direction * air_speed, air_acceleration)
 	else:
 		velocity.x = lerp(velocity.x, 0.0, air_deceleration)
+	_print_log()
+	
 
 
 func handle_jump_movement() -> void:
@@ -52,6 +58,7 @@ func handle_jump_movement() -> void:
 func handle_ground_movement() -> void:
 	if direction:
 		velocity.x = direction * speed
+		_print_log()
 	else:
 		# No direction, stop player slowly
 		velocity.x = move_toward(velocity.x, 0, speed)
@@ -66,4 +73,3 @@ func update_animation() -> void:
 		animation_player.play("run")
 	elif is_on_floor():
 		animation_player.play("idle")
-	print("position: ", position.x)	
